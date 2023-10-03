@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TareaOperacionesMath.MainPage"
+             Title="TAREA - 1">
+
+    <ScrollView>
+        <VerticalStackLayout
+        Spacing="25"
+        Padding="30,0"
+        VerticalOptions="Center">
+
+            <Label Text="OPERACIONES MATEMATICAS" 
+               FontSize="Large" 
+               TextColor="Black" 
+               FontAttributes="Bold"/>
+
+            <Label Text="Numero 1:" 
+               FontSize="Medium" 
+               TextColor="Black"/>
+
+            <Entry x:Name="numero1" 
+               Keyboard="Numeric"
+               TextColor="Black"/>
+
+            <Label Text="Numero 2:" 
+               FontSize="Medium" 
+               TextColor="Black"  />
+
+            <Entry  x:Name="numero2" 
+                Keyboard="Numeric" 
+                TextColor="Black" />
+
+
+            <Button Text="Suma" 
+                 Clicked="Button_suma" 
+                 Background="#279EFF" 
+                 CornerRadius="10"/>
+
+            <Button Text="Resta" 
+                 Clicked="Button_resta"  
+                 Background="#279EFF" 
+                 CornerRadius="10"/>
+
+            <Button Text="Multilicacion" 
+                 Clicked="Button_multiplicacion"  
+                 Background="#279EFF" 
+                 CornerRadius="10"/>
+
+            <Button Text="División" 
+                Clicked="Button_divicion" 
+                Background="#279EFF" 
+                CornerRadius="10"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
